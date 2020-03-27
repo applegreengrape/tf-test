@@ -1,11 +1,13 @@
 pipeline {
-    agent any
+    agent {
+        image 'ubuntu'
+    }
 
     stages {
         stage('Test') {
             steps {
                 echo 'Testing'
-                sh 'ls -la'
+                sh 'make'
             }
         }
     }
