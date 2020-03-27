@@ -5,7 +5,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
-                make -f Makefile
+                ls -la
+                make 
             }
         }
     }
