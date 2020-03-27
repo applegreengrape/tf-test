@@ -5,7 +5,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
-                make 
+                sh 'make init' 
             }
         }
     }
