@@ -1,6 +1,8 @@
 pipeline {
     agent {
-        image 'ubuntu'
+        docker {
+            image 'ubuntu'
+        }
     }
 
     stages {
