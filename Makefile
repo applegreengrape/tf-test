@@ -1,8 +1,7 @@
-all: init plan build
+.PHONY: configure clean refresh plan apply install
 
 init:
-   $(RM)
-   terraform init -reconfigure
+	terraform init -reconfigure
 
-plan: init
-  terraform plan -refresh=true
+plan:
+	terraform plan -refresh=true
