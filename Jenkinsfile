@@ -5,9 +5,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
-                withEnv(["PATH=/usr/local/bin:$PATH"]){ 
-                            sh 'make'
-                            }
+                sh 'ls -la'
             }
         }
     }
